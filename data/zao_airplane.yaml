@@ -1,0 +1,36 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# download command/URL (optional)
+#download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+#定义1）训练图像目录的路径（或带有训练图像列表的* .txt文件的路径），2）与我们的验证图像相同的路径，3）类数，4）类列表名称
+#train：换成你自己的训练集地址
+#val：换成自己的val地址
+#nc: 换成你自己定义的类别的数量
+#类名称：换成自己定义的类别的名称
+#https://blog.csdn.net/ai_faker/article/details/107099907
+
+
+train: /home/aminj/yolov5-master1/data/zao_airplane/images/train2014          #./data/images/train2014/  # 128 images
+val:  /home/aminj/yolov5-master1/data/zao_airplane/images/val2014                #./data/images/val2014/  # 128 images
+
+
+#train: /home/aminj/yolov5-master1/data/zao_airplane_add_1/images/train2014          #./data/images/train2014/  # 128 images
+#val:  /home/aminj/yolov5-master1/data/zao_airplane_add_1/images/val2014                #./data/images/val2014/  # 128 images
+
+
+#train: /home/aminj/yolov5-master1/data/zao_airplane_add_1/images/train2014          #./data/images/train2014/  # 128 images
+#val:  /home/aminj/yolov5-master1/data/zao_airplane_add_1/images/val2014                #./data/images/val2014/  # 128 images
+
+# number of classes
+nc: 1
+
+# class names
+names: ['airplane']
